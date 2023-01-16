@@ -7,6 +7,10 @@ This project focues on implementing a case study with microservice architecture 
 - Vault Integration with Spring Cloud Config
 - Communication between Microservices with gRPC
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/22610163/212710268-56fb724d-a590-440c-a5ec-3bf94a994171.png" | width="750">
+</p>
+
 Inventory management project is determined as a case study in this repo.
 
 ## Architectural Software Design
