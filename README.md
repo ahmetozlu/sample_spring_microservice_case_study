@@ -15,6 +15,7 @@ Inventory management project is determined as a case study in this repo.
 
 ## Architectural Software Design
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/22610163/212768230-b9e24a7f-955d-4422-9ec9-c03778fa5411.png">
+  <img src="https://user-images.githubusercontent.com/22610163/213134780-86f9d0f9-ccd3-42df-a65e-4809c597ad7a.png">
 </p>
+
 
