@@ -1,14 +1,13 @@
-package com.inventory.eurekaserver;
+package com.inventory.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@EnableEurekaServer
-public class EurekaServerApplication {
+public class GatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaServerApplication.class, args);
+		SpringApplication.run(GatewayApplication.class, args);
 	}
 
 }
