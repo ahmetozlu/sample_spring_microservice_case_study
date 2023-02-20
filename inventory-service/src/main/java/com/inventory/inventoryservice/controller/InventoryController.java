@@ -2,29 +2,19 @@ package com.inventory.inventoryservice.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RefreshScope
 @RequestMapping("/v1/inventory")
 public class InventoryController {
 
-	Logger logger = LoggerFactory.getLogger(InventoryController.class);
-	private final InventoryService inventoryService;
+    Logger logger = LoggerFactory.getLogger(InventoryController.class);
+    @RequestMapping("/")
+    public String printHelloWorld() {
 
-	public InventoryController(InventoryService inventoryService) {
-        this.inventoryService = inventoryService;        
+        logger.info("HELLO WORLD!");
+        return "I just want to say hello -- Spring Boot!";
     }
-
-    @GetMapping("{id}")
-    public ResponseEntity<LibraryDto> getLibraryById(@PathVariable String id) {
-        return ResponseEntity.ok(libraryService.getAllBooksInLibraryById(id));
-    }
-    
-
 }
