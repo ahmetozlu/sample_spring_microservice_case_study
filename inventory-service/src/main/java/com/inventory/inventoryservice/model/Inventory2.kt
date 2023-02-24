@@ -11,7 +11,7 @@ data class Inventory2 @JvmOverloads constructor(
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     val id: String? = "",
 
-    @ElementCollection
-    val userItem: List<String> = ArrayList()
+    /*@ElementCollection
+    val userItem: List<String> = ArrayList()*/
 
 )

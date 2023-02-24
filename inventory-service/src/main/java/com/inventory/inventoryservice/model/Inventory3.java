@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-public class Inventory implements Serializable {
+public class Inventory3 implements Serializable {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(
