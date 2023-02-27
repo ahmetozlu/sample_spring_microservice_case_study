@@ -21,15 +21,14 @@ public class InventoryController {
     public InventoryController(InventoryService inventoryService) {
         this.inventoryService = inventoryService;
     }
-    /*@RequestMapping("/")
+    @RequestMapping("/")
     public String printHelloWorld() {
 
         logger.info("HELLO WORLD!");
         return "I just want to say hello -- Spring Boot!";
-    }*/
+    }
 
-    //@PostMapping
-    @RequestMapping("/")
+    @PostMapping("/p")
     public ResponseEntity<InventoryDto> createLibrary() {
         logger.info("HELLO WORLD2!");
         return ResponseEntity.ok(inventoryService.createLibrary());
