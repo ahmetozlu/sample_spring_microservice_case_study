@@ -1,8 +1,5 @@
 package com.inventory.inventoryservice.dto
 
-data class InventoryDto @JvmOverloads constructor(
-    val id: String,
+data class AddInventoryRequest (
     val userItemList: List<String>? = ArrayList()
-) {
-
-}
+)
